@@ -45,7 +45,7 @@ print(df.isna().sum())
 
 """##Data Cleaning & Transformation"""
 
-# Function to convert string-based numerical values (e.g., '10K', '2.5M') to actual numbers
+# Function to convert string based numerical values (10K, 2.5M) to actual numbers
 def to_numeric(value):
     if isinstance(value, str):
         value = value.replace(",", "").lower()
